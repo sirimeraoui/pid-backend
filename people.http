@@ -1,0 +1,37 @@
+@baseurl = http://localhost:8080
+
+GET {{ baseurl }}/api/v1/people
+Accept: application/json
+
+
+
+###
+POST  {{ baseurl }}/api/v1/people
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstName": "OUtis",
+  "lastName": "nemo"
+}
+
+###
+
+POST  {{ baseurl }}/api/v1/people
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstName": "georgio",
+  "lastName": "nemo"
+}
+
+###
+
+GET {{ baseurl }}/api/v1/people/1
+Accept: application/json
+
+
+
+
+

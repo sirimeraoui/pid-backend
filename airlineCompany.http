@@ -1,0 +1,38 @@
+
+@baseurl = http://localhost:8080
+
+GET {{ baseurl }}/api/v1/airline_companies
+Accept: application/json
+
+
+
+###
+POST  {{ baseurl }}/api/v1/airline_companies
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "The whatever airCompany",
+  "motto": "fly high "
+}
+
+###
+
+POST  {{ baseurl }}/api/v1/airline_companies
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "The best airCompany",
+  "motto": "fly higher "
+}
+
+###
+
+GET {{ baseurl }}/api/v1/airline_companies/1
+Accept: application/json
+
+
+
+
+

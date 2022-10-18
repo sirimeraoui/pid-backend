@@ -1,0 +1,39 @@
+@baseurl = http://localhost:8080
+
+GET {{ baseurl }}/api/v1/roles
+Accept: application/json
+
+
+
+
+###
+POST {{ baseurl }}/api/v1/roles
+Accept: application/json
+Content-Type: application/json
+Authorization : Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InB4SWRrV2l4ZHpUNF9iWUYxTHNBZCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hdXRoLXNpcmltZXJhb3VpLmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJnaXRodWJ8NzQ3NzUzMTQiLCJhdWQiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2FwaS92MSIsImh0dHBzOi8vZGV2LWF1dGgtc2lyaW1lcmFvdWkuZXUuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTY1NTM3NTkzOSwiZXhwIjoxNjU1NDYyMzM5LCJhenAiOiJWTXZlMFl5cUxlWUkzMFJDS2wxNTBCTmJJWldVSVlvWSIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.ghAh0Lph5uJiIyRjYv_86XwPD2KtKNwLJjY3rRjPS8X51Ee8SQWqlvIz9GJoY1UpqbRwyAhsNp1aiA66TvOKwiGwpZ-HBEMFccS5Pl95kBwT1EuIpcH3DBSTJTsklcz0GLvpEW8INlDxApMZ8vM-CxdJE1Xilld5HyOltBtn4NP2SqN_99k-OY0mxzKTczaacM-A1T_crMD52EOX_CXLIkK_VW4N2c-8RR3-OEtYI7WkXa4k_r92uIfZ7njz2k7lsrj4iXJJPbe5TXjc06evTGyVgMkP5rkqXR-DZd901dmPiYo-SbZAZuk4vK1oRdvwVtueltKKYrmCgQEmAjIkug
+{
+  "title": "passenger",
+  "description": "read-write-own-reservation"
+
+}
+
+###
+
+GET {{ baseurl }}/api/v1/roles/1
+Accept: application/json
+
+
+# ###
+
+# POST http://localhost:8080/api/v1/roles
+# Accept: application/json
+# Content-Type: application/json
+
+# {
+#   {
+#   "town": "Woluwe-Saint-Pierre",
+#   "postalCode": "1500",
+#   "region": "Brussels",
+#   "country": "Belgium"
+# }
+# }

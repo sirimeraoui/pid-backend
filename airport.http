@@ -1,0 +1,39 @@
+@baseurl = http://localhost:8080
+
+GET {{ baseurl }}/api/v1/airports
+Accept: application/json
+
+###
+POST http://localhost:8080/api/v1/airports
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InB4SWRrV2l4ZHpUNF9iWUYxTHNBZCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hdXRoLXNpcmltZXJhb3VpLmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwNTQ0ODg3MzMwOTM4NTc0MjgwOSIsImF1ZCI6WyJodHRwOi8vbG9jYWxob3N0OjgwODAvYXBpL3YxIiwiaHR0cHM6Ly9kZXYtYXV0aC1zaXJpbWVyYW91aS5ldS5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjU1ODM3NzM4LCJleHAiOjE2NTU5MjQxMzgsImF6cCI6IlZNdmUwWXlxTGVZSTMwUkNLbDE1MEJOYklaV1VJWW9ZIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCByZWFkOmFkZHJlc3NlcyByZWFkOnJvbGVzIHJlYWQ6YWlybGluZV9jb21wYW5pZXMgcmVhZDpjb250YWN0c19pbmZvIHJlYWQ6ZmxpZ2h0X2NsYXNzZXMgcmVhZDphaXJwb3J0cyByZWFkOnJlc2VydmF0aW9ucyBjcmVhdGU6YWRkcmVzc2VzIGNyZWF0ZTphaXJsaW5lX2NvbXBhbmllcyBjcmVhdGU6Y29udGFjdHNfaW5mbyBjcmVhdGU6ZmxpZ2h0X2NsYXNzZXMgY3JlYXRlOmFpcnBvcnRzIn0.Ep2EEhEexywvxHXrJvfggEzTYndzlCdfJGjzL_3nERauJchS_mo4fV5wBl5e22Ik5PuVBcWjGX9eigzZYN2b3kp68R9PUNKRFm5mF6D2GWfgKkZcEog4KRgbsnPd2S2cWq9elXDMJQtLnvQk43zi7eKq85Lp1YNSQx8X3-RQzCSHzE-cG3_3lJl44PjAdCxyGJKSVT9pLNOttvovV5mNUdBRYqXp0rKE6lOBTjpaLXc_74grq_DCUtpOdJd4hX8p2S6CdMO-FLGbxjGbXvqJOBXQG8dpVzghuSGSGoyhsS5W2-AbKznOVkQV_WIiNDzOJJcbkVLzOiKvGPYq8ae-gA
+
+{
+  "name": "Brussels Airport",
+  "city": "zaventem",
+  "country": "Belgium",
+  "latitude": "15.222",
+  "longitude": "52.988"
+}
+
+###
+
+GET {{ baseurl }}/api/v1/airports/1
+Accept: application/json
+
+
+# ###
+
+# POST http://localhost:8080/api/v1/airports
+# Accept: application/json
+# Content-Type: application/json
+
+# {
+#   {
+#   "town": "Woluwe-Saint-Pierre",
+#   "postalCode": "1500",
+#   "region": "Brussels",
+#   "country": "Belgium"
+# }
+# }

@@ -1,0 +1,37 @@
+@baseurl = http://localhost:8080
+
+GET {{ baseurl }}/api/v1/contacts_info
+Accept: application/json
+
+
+
+###
+POST  {{ baseurl }}/api/v1/contacts_info
+Accept: application/json
+Content-Type: application/json
+
+{
+  "phoneNumber": "0458265741",
+  "emailAddress": "fly@gmail.com"
+}
+
+###
+
+POST  {{ baseurl }}/api/v1/contacts_info
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "The best airCompany",
+  "motto": "fly higher "
+}
+
+###
+
+GET {{ baseurl }}/api/v1/contacts_info/1
+Accept: application/json
+
+
+
+
+

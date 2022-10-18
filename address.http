@@ -1,0 +1,44 @@
+
+@baseurl = http://localhost:8080
+
+GET {{ baseurl }}/api/v1/addresses
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InB4SWRrV2l4ZHpUNF9iWUYxTHNBZCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hdXRoLXNpcmltZXJhb3VpLmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2MjljOGMwODViMWYwNDAwNjljNjYzMTciLCJhdWQiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2FwaS92MSIsImh0dHBzOi8vZGV2LWF1dGgtc2lyaW1lcmFvdWkuZXUuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTY1NTIxOTIyOSwiZXhwIjoxNjU1MzA1NjI5LCJhenAiOiJWTXZlMFl5cUxlWUkzMFJDS2wxNTBCTmJJWldVSVlvWSIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.kyt5bYY_g6eUuSRlgMPbFUqeKms22IwScciXupj-E9GVtFbnpV3FClv3N9lN_g03dfrk54cwgEz_p1_SstfDVBjlwCb186aABCFj8GMUJA2KknlNv9lYeuai3DEnP1Iw8sMdsGv4aGGMedZb_9FtuIFyY9BhbHXUADpsIpMiCwP4e9QnyNDO_52wOEFvtQebDw97lcgN38L8L-tG4L3Nx2rRfI0vB4XYJe6LPTJjd6g4Lb6rpW5wwqt3tkjzsjfpkC8JkkjXzoyoq6WwaGuogIK4fzEZW3GbeSjCy-6U_oBnuLOHsXlbJaqzP0PYspX_QmHOKL8K2YSnsefjEidG4g
+
+
+
+
+###
+POST http://localhost:8080/api/v1/addresses
+Accept: application/json
+Content-Type: application/json
+Authorization : Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InB4SWRrV2l4ZHpUNF9iWUYxTHNBZCJ9.eyJpc3MiOiJodHRwczovL2Rldi1hdXRoLXNpcmltZXJhb3VpLmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJnaXRodWJ8NzQ3NzUzMTQiLCJhdWQiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2FwaS92MSIsImh0dHBzOi8vZGV2LWF1dGgtc2lyaW1lcmFvdWkuZXUuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTY1NTM3NTkzOSwiZXhwIjoxNjU1NDYyMzM5LCJhenAiOiJWTXZlMFl5cUxlWUkzMFJDS2wxNTBCTmJJWldVSVlvWSIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.ghAh0Lph5uJiIyRjYv_86XwPD2KtKNwLJjY3rRjPS8X51Ee8SQWqlvIz9GJoY1UpqbRwyAhsNp1aiA66TvOKwiGwpZ-HBEMFccS5Pl95kBwT1EuIpcH3DBSTJTsklcz0GLvpEW8INlDxApMZ8vM-CxdJE1Xilld5HyOltBtn4NP2SqN_99k-OY0mxzKTczaacM-A1T_crMD52EOX_CXLIkK_VW4N2c-8RR3-OEtYI7WkXa4k_r92uIfZ7njz2k7lsrj4iXJJPbe5TXjc06evTGyVgMkP5rkqXR-DZd901dmPiYo-SbZAZuk4vK1oRdvwVtueltKKYrmCgQEmAjIkug
+
+
+{
+  "town": "Evere",
+  "postalCode": "1200",
+  "region": "Brussels",
+  "country": "Belgium"
+}
+
+###
+
+GET {{ baseurl }}/api/v1/addresses/1
+Accept: application/json
+
+
+# ###
+
+# POST http://localhost:8080/api/v1/addresses
+# Accept: application/json
+# Content-Type: application/json
+
+# {
+#   {
+#   "town": "Woluwe-Saint-Pierre",
+#   "postalCode": "1500",
+#   "region": "Brussels",
+#   "country": "Belgium"
+# }
+# }

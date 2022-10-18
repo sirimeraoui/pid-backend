@@ -1,0 +1,10 @@
+INSERT INTO AIRLINE_COMPANY (id,name,motto,version) VALUES (nextval('hibernate_sequence'),'Brussels Airline','You''re in good company',1);
+INSERT INTO AIRLINE_COMPANY (id,name,motto,version) VALUES (nextval('hibernate_sequence'),'Air Belgium','Comfort ,service and well-being without compromise',1);
+INSERT INTO AIRLINE_COMPANY (id,name,motto,version) VALUES (nextval('hibernate_sequence'),'Birdy Airline','****',1);
+INSERT INTO AIRLINE_COMPANY (id,name,motto,version) VALUES (nextval('hibernate_sequence'),'Cargo B Airlines','****',1);
+INSERT INTO AIRLINE_COMPANY (id,name,motto,version) VALUES (nextval('hibernate_sequence'),'Belgian Internationam Air Services','*****',1);
+INSERT INTO AIRLINE_COMPANY (id,name,motto,version) VALUES (nextval('hibernate_sequence'),'SN Brussels Airlines','*****',1);
+INSERT INTO AIRLINE_COMPANY (id,name,motto,version) VALUES (nextval('hibernate_sequence'),'Vision Air','******',1);
+INSERT INTO AIRLINE_COMPANY (id,name,motto,version) VALUES (nextval('hibernate_sequence'),'ASL Airlines Belgium','*****',1);
+INSERT INTO AIRLINE_COMPANY (id,name,motto,version) VALUES (nextval('hibernate_sequence'),'TUI Fly Belgium','*****',1);
+INSERT INTO AIRLINE_COMPANY (id,name,motto,version) VALUES (nextval('hibernate_sequence'),'AIr Union','*****',1);

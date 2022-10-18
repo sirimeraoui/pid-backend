@@ -1,0 +1,3 @@
+ALTER TABLE ADDRESS ADD COLUMN VERSION INTEGER;
+UPDATE ADDRESS SET VERSION =0 WHERE VERSION IS NULL;
+alter table address alter column version set not null;
